@@ -16,9 +16,10 @@ export default class Home extends React.Component {
                     <FormGroup>
                         <Label for="exampleSelect">Country of Origin</Label>
                         <Input type="select" name="select" id="exampleSelect">
-                            <option>Brazilian</option>
-                            <option>Cuban</option>
-                            <option>Dominican</option>
+                            <option>Brazil</option>
+                            <option>Cuba</option>
+                            <option>Dominican Republic</option>
+                            <option>Other</option>
                         </Input>
                     </FormGroup>
                     <FormGroup>
