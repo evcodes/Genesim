@@ -5,6 +5,7 @@ import {Container, Col, Row} from 'reactstrap';
 //images
 import dnaImage from './assets/dnaHead.jpg';
 import neuralNet from './assets/neuralNet.png';
+import headShot from './assets/headshot.jpeg';
 
 import './about.css';
 
@@ -69,6 +70,9 @@ const About = () => {
                         more favorable in terms of eye color, skin complexion, hair, nose, etc and how this plays out in their
                         lived experience. Many narratives that we have seen in the course heavily revolve around physical
                         appearance defining a person’s country of origin and their lived experience.</p1>
+                </Col>
+                <Col lg = '6'>
+                    <img className = "nn-img" src= {headShot}/>
                 </Col>
             </Row>
             
