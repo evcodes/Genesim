@@ -1,9 +1,9 @@
 import React from 'react';
 
 // different pages on the site
-import Home from '../pages/Home/index.js';
-import About from '../pages/About';
-import Archives from '../pages/Archives';
+import Home from '../pages/Home/index';
+import About from '../pages/About/index';
+import Archives from '../pages/Archives/index';
 import NoMatch from '../pages/NoMatch';
 
 import Navbar from '../components/NavBar/Navbar.js'

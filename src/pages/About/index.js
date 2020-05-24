@@ -1,11 +1,16 @@
 import React from 'react'
 
 import {Container, Col, Row} from 'reactstrap';
-import dnaImage from '../assets/dnaHead.jpg';
+
+//images
+import dnaImage from './assets/dnaHead.jpg';
+import neuralNet from './assets/neuralNet.png';
+
+import './about.css';
 
 const About = () => {
     return (
-        <Container>
+        <Container className = "content-container">
             <br/>
             <Row>
                 <Col lg = '6' >
@@ -32,12 +37,27 @@ const About = () => {
                 </p>
                 </Col>
                 <Col lg = '6'>
-                    <img src = {dnaImage}></img>
+                    <img className = "about-img" src = {dnaImage}></img>
                 </Col>
             </Row>
             <Row>
                 <Col lg  = '6'>
                     <h2>Future work</h2>
+                    <strong>Content</strong>
+                    <p>I need to gather more information about racial stratifications and segmentations based on different countries. Right now, we only have three countries and 
+                        those stories exist in the archives section. The goal is to have some artificial intelligence generate an avatar, and attach a respective story that will inform
+                        the user of the various forms of discrimination this group faced in their respective country.
+                    </p>
+                    <strong>Technology</strong>
+                    <p>This project was initially created to learn a little more using <a href = "https://en.wikipedia.org/wiki/Artificial_neural_network">
+                        neural networks </a> (a field of Artificial Intelligence) to generate avatars. These avatars would then random and parameterized by what
+                        the users select and some input image. Furthermore, I wanted to get some feedback after the image was generated to improve the neural network
+                        <br/><br/> 
+                    I also wanted to store the user data, with their consent to create a statistical analysis of what traits are deemed favorable</p>
+                    
+                </Col>
+                <Col lg = '6'>
+                    <img className = "nn-img" src = {neuralNet}></img>
                 </Col>
             </Row>
 

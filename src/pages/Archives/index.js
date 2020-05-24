@@ -3,7 +3,7 @@ import {Container} from 'reactstrap';
 
 const Archives = () => {
     return (
-        <Container>
+        <Container className = "content-container">
             <h1>
                 Archive Page
             </h1>

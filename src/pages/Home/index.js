@@ -1,15 +1,27 @@
 import React from 'react'
-import { Container, Label, Input, FormGroup, Button, Row} from 'reactstrap';
+import { Container, Label, Input, FormGroup, Button, Row, Col, Form} from 'reactstrap';
+
+import Axios from 'axios';
 
 import placeHolder from './avatarSamples/placeholder.png';
-import Col from 'reactstrap/lib/Col';
-import Form from 'reactstrap/lib/Form';
 
 import './home.css';
 export default class Home extends React.Component {
     render() {
+
+        Axios({
+            method: "POST",
+            url: "http://localhost:5000/",
+            headers: {
+              "Content-Type": "application/json"
+            }
+          }).then(res => {
+            console.log(res.data.message);
+        });
+
+
         return (
-        <Container>
+        <Container className = "content-container">
             <hr/>
             <h3>Sequence your avatar</h3>
 
@@ -66,7 +78,7 @@ export default class Home extends React.Component {
                         </Input>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="exampleSelect">Lip colo</Label>
+                        <Label for="exampleSelect">Lip color</Label>
                         <Input type="select" name="select" id="exampleSelect">
                             <option>Purplish (CAG TTT AAA)</option>
                             <option>Brownish (CAG TAT ACC)</option>
@@ -81,7 +93,7 @@ export default class Home extends React.Component {
                         </Input>
                     </FormGroup>
                 </Form>
-                <Button className = "submit-form" color = "success">Submit</Button>{' '}
+                <Button className = "submit-form">Submit</Button>{' '}
             </Col>
                 <Col className = "avatar-col">
                     <Row>
