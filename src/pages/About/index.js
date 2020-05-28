@@ -38,7 +38,7 @@ const About = () => {
                 </p>
                 </Col>
                 <Col lg = '6'>
-                    <img className = "about-img" src = {dnaImage}></img>
+                    <img className = "about-img" src = {dnaImage} alt = "dna strand"></img>
                 </Col>
             </Row>
             <Row>
@@ -58,7 +58,7 @@ const About = () => {
                     
                 </Col>
                 <Col lg = '6'>
-                    <img className = "nn-img" src = {neuralNet}></img>
+                    <img className = "nn-img" src = {neuralNet} alt = "diagram of neural network"></img>
                 </Col>
             </Row>
 
@@ -72,7 +72,7 @@ const About = () => {
                         appearance defining a person’s country of origin and their lived experience.</p1>
                 </Col>
                 <Col lg = '6'>
-                    <img className = "nn-img" src= {headShot}/>
+                    <img className = "nn-img" src= {headShot} alt = "author of genesim"/>
                 </Col>
             </Row>
             

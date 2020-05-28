@@ -1,7 +1,7 @@
 import React from 'react';
 
 //reactstrap dependies
-import {Nav,NavLink, Container} from 'reactstrap';
+import {Nav,NavLink} from 'reactstrap';
 
 //react-router dependies
 import {Link} from 'react-router-dom';
