@@ -21,6 +21,9 @@ const NavBar = () => {
                     <Link to = "/Archive">
                         <NavLink href="/Archive">Archvial Information</NavLink> 
                     </Link>
+                    <Link to = "/Submissions">
+                        <NavLink href="/submissions">Submissions</NavLink>
+                    </Link>
                     <Link to = "/About">
                         <NavLink href="/About">About</NavLink>
                     </Link>
