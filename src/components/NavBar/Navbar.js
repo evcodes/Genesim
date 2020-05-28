@@ -1,7 +1,7 @@
 import React from 'react';
 
 //reactstrap dependies
-import {Nav,NavLink} from 'reactstrap';
+import {Nav} from 'reactstrap';
 
 //react-router dependies
 import {Link} from 'react-router-dom';
@@ -16,16 +16,16 @@ const NavBar = () => {
                 </div>
                 <Nav>
                     <Link to = "/">
-                        <NavLink href = "/" >Sequencing an Avatar</NavLink>
+                        <p className = "nav-link">Sequencing an Avatar</p >
                     </Link>
                     <Link to = "/Archive">
-                        <NavLink href="/Archive">Archvial Information</NavLink> 
+                        <p  className = "nav-link" >Archvial Information</p > 
                     </Link>
                     <Link to = "/Submissions">
-                        <NavLink href="/submissions">Submissions</NavLink>
+                        <p className = "nav-link" >Submissions</p >
                     </Link>
                     <Link to = "/About">
-                        <NavLink href="/About">About</NavLink>
+                        <p className = "nav-link" >About</p >
                     </Link>
                 </Nav>
             </div>

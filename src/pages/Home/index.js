@@ -23,15 +23,16 @@ class Home extends React.Component {
             lipShape : "Thin (GAG ACT AAA)",
             lipColor : "Purplish (CAG TTT AAA)",
             sex: "Male (AAA TTT GCA)",
+            subSuccess:false
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
     
     handleChange(event){
-
+        const {name, value} = event.target
         this.setState({
-            [event.target.name] : event.target.value
+            [name]:value
         })
     }
 
@@ -49,11 +50,11 @@ class Home extends React.Component {
             sex: this.state.sex,
         }        
 
-        Axios.post('http://localhost:5000/api/form', {formResponse})
-        .then(function(res) {
-            console.log(res.data);
-            console.log(res.status);
-        })
+        Axios.post('http://localhost:5000/api/form', formResponse).then(
+            this.setState({
+                subSuccess:true
+            })
+        )
     }
 
     render() {
@@ -133,6 +134,7 @@ class Home extends React.Component {
                     </FormGroup>
                 </Form>
                 <Button className = "submit-form" onClick={this.handleSubmit}>Submit</Button>{' '}
+                {this.state.subSuccess? <p>Submission successful</p>:""}
             </Col>
                 <Col className = "avatar-col">
                     <Row>
